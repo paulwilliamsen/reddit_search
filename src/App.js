@@ -26,8 +26,8 @@ class App extends Component {
     return (
       <Fragment>
         <h1>Hello</h1>
-        <SearchResultList></SearchResultList>
-        <SearchForm></SearchForm>
+        <SearchForm onSearch={this.handleSearch}/>
+        <SearchResultList items={this.state.results}/>
 
       </Fragment>
     );
